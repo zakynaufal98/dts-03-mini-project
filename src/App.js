@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./Components/navbar.jsx";
+import Navbar from "./Components/Navbar.jsx";
 
 const App = () => {
   return (
