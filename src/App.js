@@ -6,7 +6,8 @@ import LoginForm from "./Components/LoginForm";
 const App = () => {
   return (
     <div>
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <Navbar />
     </div>
   );
 };
