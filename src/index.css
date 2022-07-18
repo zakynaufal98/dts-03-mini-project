@@ -14,8 +14,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.loginBackground {
-  background-image: url(../src/assets/login-image.jpg);
-  object-fit: cover;
-}

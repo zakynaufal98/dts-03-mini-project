@@ -5,9 +5,9 @@ import LoginForm from "./Components/LoginForm";
 
 const App = () => {
   return (
-    <div>
-      {/* <LoginForm /> */}
+    <div className="w-full overflow-x-hidden">
       <Navbar />
+      <LoginForm />
     </div>
   );
 };
