@@ -7,8 +7,8 @@ import { BellIcon, UserIcon, ChevronDoubleDownIcon } from "@heroicons/react/soli
 const Navbar = () => {
 
   return (
-    <div className="Header container:sm pr-6 flex flex-row h-16 w-full items-center bg-black justify-between">
-      <div className="HeaderLeft flex gap-8 ml-[60px]">
+    <div className="Header container:sm pr-6 flex flex-row h-16 w-full items-center bg-[#141414] justify-between">
+      <div className="HeaderLeft flex gap-8 ml-4">
         {/* Logo Image */}
         <img src={logo} alt="logo" className="Logo w-[36px] h-[44px]" />
         {/* Menu Kiri */}
