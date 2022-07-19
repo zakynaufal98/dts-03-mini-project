@@ -24,9 +24,9 @@ const Navbar = () => {
       </div>
 
       {/* Menu Kanan */}
-      <div className="HeaderRight flex justify-self-end invisible sm:visible">
-        <SearchIcon className="text-white w-6 h-6 visible absolute right-3 sm:relative" />
-        <ul className="flex gap-5 items-center text-white text-xs">
+      <div className="HeaderRight justify-self-end flex">
+        <SearchIcon className="text-white w-6 h-6 mr-3" />
+        <ul className="hidden gap-5 items-center text-white text-xs sm:flex">
           <li> User </li>
           <li> <BellIcon className="w-6 h-6" /></li>
           <li> <GiftIcon className="w-6 h-6" /> </li>
