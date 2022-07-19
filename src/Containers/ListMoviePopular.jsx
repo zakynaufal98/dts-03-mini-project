@@ -26,7 +26,7 @@ const ListMoviePopular = () => {
   }, []);
 
   return (
-    <div className="flex border-2 gap-1 overflox-x-auto">
+    <div className="flex border-2 gap-1">
       {movies.map((movie) => {
         return <Original key={movie.id} propsMovie={movie}/>;
       })}

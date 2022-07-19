@@ -7,7 +7,7 @@ function Original({propsMovie}) {
     const ImageIMDB = 'https://image.tmdb.org/t/p/w400/';
 
     return (
-        <div className="flex">
+        <div className="">
             <img src={`${ImageIMDB}${propsMovie.poster_path}`} alt="poster" className=""/>
             <div className="flex ">
                 
