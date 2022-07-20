@@ -10,7 +10,7 @@ function Carousel(props) {
 
     return (
         <div className="">
-            <img src={`${ImageIMDB}${imgType}`} alt="poster" className="min-w-[18rem] rounded"/>
+            <img src={`${ImageIMDB}${imgType}`} alt="poster" className="min-w-[18rem] rounded hover:brightness-75 cursor-pointer"/>
             <div className="flex ">
                 
             </div>
