@@ -6,7 +6,7 @@ import Carousel from "./Carousel"
 
 function Main() {
     return(
-        <div className="p-4 bg-[#201F1F]">
+        <div className="p-4 7bg-[#201F1F]">
             <ContinueWatching />
             <ListMoviePopular />
             <ListMovieTopRated />
