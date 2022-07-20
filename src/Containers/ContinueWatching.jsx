@@ -14,8 +14,7 @@ const ContinueWatching = () => {
                     "https://api.themoviedb.org/3/movie/popular?api_key=15c23c801b8646b6fa32283ec6c7c54f"
                 );
 
-                // Jangan lupa set statenya
-                // Perhatikan di sini responseDariTMDB ada .data (response schema axios)
+               
                 setMovies(responseFromTMDB.data.results);
             } catch (err) {
                 console.log(err);
