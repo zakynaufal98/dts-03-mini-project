@@ -6,6 +6,7 @@ import ListMovieTopRated from "../Containers/ListMovieTopRated"
 function Home() {
     return(
         <div className="p-4 bg-[#201F1F]">
+            
             <ContinueWatching />
             <ListMoviePopular />
             <ListMovieTopRated />
