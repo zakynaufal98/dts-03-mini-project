@@ -1,22 +1,20 @@
-function Card(props) {
-    return (
-        <div className="min-w-[16rem] h-[30rem] mr-2 flex items-center justify-center bg-slate-500 rounded">
-            Item {props.num}
-        </div>
-    )
-}
+import React from "react"
 
-function Original() {
-    const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    const listItem = items.map(item => <Card num={item} />)
+
+
+function Original({propsMovie}) {
+  
+    const ImageIMDB = 'https://image.tmdb.org/t/p/w400/';
+
     return (
-        <div className="pt-8">
-            <p className="text-white">Original</p>
-            <div className="flex w-full relative overflow-x-auto">
-                {listItem}
+        <div className="">
+            <img src={`${ImageIMDB}${propsMovie.poster_path}`} alt="poster" className=""/>
+            <div className="flex ">
+                
             </div>
         </div>
     )
 }
 
 export default Original
+

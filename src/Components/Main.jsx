@@ -5,7 +5,7 @@ function Main() {
     return(
         <div className="p-4">
             <Carousel />
-            <Original />
+            {/* <Original /> */}
         </div>
     )
 }
