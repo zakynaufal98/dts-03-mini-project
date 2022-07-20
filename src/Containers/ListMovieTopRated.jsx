@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Original from "../Components/Original.jsx";
+import Carousel from "../Components/Carousel.jsx";
 
-const ListMoviePopular = () => {
+const ListMovieTopRated = () => {
 
   const [movies, setMovies] = useState([]);
 
@@ -26,13 +26,15 @@ const ListMoviePopular = () => {
   }, []);
 
   return (
-    <div className="flex border-2 gap-1 overflox-x-auto">
-      {movies.map((movie) => {
-        return <Original key={movie.id} propsMovie={movie}/>;
-      })}
+    <div className="my-5 text-white">
+      <p>Top Rated Movies</p>
+      <div className="flex gap-1 overflow-x-auto">
+        {movies.map((movie) => {
+          return <Carousel key={movie.id} propsMovie={movie} imgType={"backdrop"} />;
+        })}
+      </div>
     </div>
-   
   );
 };
 
-export default ListMoviePopular;
+export default ListMovieTopRated;
