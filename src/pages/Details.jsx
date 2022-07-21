@@ -30,14 +30,14 @@ function Details() {
         };
 
         fetchDataMovies();
-    }, []);
+    }, [movieId]);
 
     const ImageIMDB = 'https://image.tmdb.org/t/p/original';
     
     return (
         
         <div >
-            <img src={`${ImageIMDB}${movies.backdrop_path}`} className="min-h-[13.1875rem] bg-slate-400" />
+            <img src={`${ImageIMDB}${movies.backdrop_path}`} className="min-h-[13.1875rem] bg-slate-400 w-screen" />
             <div className="p-4">
                 <div className="my-14">
                     <h1 className="text-2xl">Description</h1>

@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Series from "./pages/Series";
 import Movies from "./pages/Movies";
 import Details from "./pages/Details"
+import Register from "./pages/Register"
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="series" element={<Series />} />
         <Route path="movies" element={<Movies />} />
+        <Route path="register" element={<Register />} />
         <Route path="details/:movieId" element={<Details />} />
       </Routes>
       <Footer />

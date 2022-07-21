@@ -17,7 +17,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="Logo w-[36px] h-[44px]" />
         {/* Menu Kiri */}
         <div className="MenuItems flex invisible md:visible ">
-          <ul className="flex flex-row gap-[20px] text-white text-xs items-center ">
+          <ul className="flex flex-row gap-[20px] text-white text-sm items-center ">
             <Link to="/">
               <li>Home</li>
             </Link>
