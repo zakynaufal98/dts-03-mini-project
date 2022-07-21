@@ -10,7 +10,7 @@ function Carousel(props) {
     function openDetails(obj){
         console.log(obj)
         if(props.propsMovie)
-        navigate(`../detailsSeries/${props.propsMovie.id}`, { replace: true });
+        navigate(`../series/${props.propsMovie.id}`, { replace: true });
     }
 
     return (
