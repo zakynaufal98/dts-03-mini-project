@@ -13,7 +13,7 @@ import { useState } from "react";
 
 function Dropdown() {
   return (
-    <div className="flex absolute justify-end w-screen pr-12">
+    <div className="flex absolute justify-end w-screen pr-5">
       <div className="text-white bg-[#141414] px-6 py-3">
         Logout
       </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="Header container:sm pr-6 flex flex-row h-16 w-full items-center bg-[#141414] justify-between">
         <div className="HeaderLeft flex gap-8 ml-4">
           {/* Logo Image */}
-          <img src={logo} alt="logo" className="Logo w-[36px] h-[44px]" />
+          <img src={logo} alt="logo" className="Logo w-[36px] h-[44px] self-center" />
           {/* Menu Kiri */}
           <div className="MenuItems flex invisible md:visible ">
             <ul className="flex flex-row gap-[20px] text-white text-sm items-center ">
@@ -58,8 +58,8 @@ const Navbar = () => {
         </div>
 
         {/* Menu Kanan */}
-        <div className="HeaderRight justify-self-end flex">
-          <SearchIcon className="text-white w-6 h-6 mr-3" />
+        <div className="HeaderRight justify-self-end flex gap-2">
+          <SearchIcon className="text-white w-6 h-6 " />
           <ul className="hidden gap-5 items-center text-white text-xs sm:flex">
             <li> User </li>
             <li>
@@ -68,16 +68,14 @@ const Navbar = () => {
             <li>
               <GiftIcon className="w-6 h-6" />
             </li>
-            <div className="flex items-center gap-[10px]">
-              <li>
-                <UserIcon className="w-6 h-6" />
-              </li>
-              <li>
-                <ChevronDoubleDownIcon className="w-6 h-6 cursor-pointer" onClick={() => toggleDropdown(value)} />
 
-              </li>
-            </div>
+            <li>
+              <UserIcon className="w-6 h-6" />
+            </li>
+
+
           </ul>
+          <ChevronDoubleDownIcon className="w-6 h-6 cursor-pointer text-white" onClick={() => toggleDropdown(value)} />
 
         </div>
 

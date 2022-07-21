@@ -26,7 +26,7 @@ function DetailsSeries() {
         };
 
         fetchDataMovies();
-    }, []);
+    }, [movies]);
 
     const ImageIMDB = 'https://image.tmdb.org/t/p/original';
     
