@@ -12,7 +12,7 @@ import LoginForm from "./Components/LoginForm";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full relative overflow-x-hidden">
       {/* <LoginForm /> */}
       <Navbar />
       {/* <Main /> */}
