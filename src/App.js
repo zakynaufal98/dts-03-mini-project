@@ -7,7 +7,7 @@ import Series from "./pages/Series";
 import Movies from "./pages/Movies";
 import Details from "./pages/Details";
 import DetailsSeries from "./pages/DetailsSeries";
-import Login from "./Components/LoginForm";
+import Register from "./pages/Register";
 import LoginForm from "./Components/LoginForm";
 
 const App = () => {
@@ -18,6 +18,8 @@ const App = () => {
       {/* <Main /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="login" element={<LoginForm />} />
+        <Route path="register" element={<Register />} />
         <Route path="series" element={<Series />} />
         <Route path="movies" element={<Movies />} />
         <Route path="New-and-Popular" element={<Movies />} />
